@@ -1,0 +1,31 @@
+.header {
+    min-height: 80px;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(254, 132, 51);
+    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+.userType {
+    height: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bolder;
+    font-size: large;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
