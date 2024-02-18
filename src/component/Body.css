@@ -1,5 +1,5 @@
 .body {
     display: flex;
-    overflow: visible;
+    overflow: hidden;
     flex-direction: row;
 }
