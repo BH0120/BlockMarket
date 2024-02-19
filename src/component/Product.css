@@ -8,6 +8,9 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
     margin-top: 0.5rem;
+    margin-left: 5px;
+
+    cursor: pointer;
 }
 
 .product:last-child {
@@ -18,21 +21,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
 }
 
 .navText{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 15px;
+    margin-left: 1.5rem;
 }
+
 .navText > h2 {
     margin-bottom: 0;
 }
 
 img {
-    width: 90%;
+    width: 100%;
     object-fit: cover;
 
 }

@@ -1,0 +1,31 @@
+#likeParent {
+    float: right;
+    min-width: 150px;
+    max-width: 150px;
+    height: 80%;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.likeBucket img:nth-child(1) {
+    margin-top: 40px;
+}
+
+#bucketHead {
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(254, 132, 51);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}

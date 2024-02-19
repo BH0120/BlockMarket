@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from './Nav';
 import Detail from './Detail';
 import './Body.css';
+import LikeBucket from './LikeBucket';
 
 function Body(props) {
     const [selectedItemId, setSelectedItemId] = useState(1);
@@ -14,6 +15,7 @@ function Body(props) {
         <div className='body'>
             <Nav products={props.products} onItemClick={handleItemClick}/>
             {selectedItemId && <Detail products={props.products} onItemClick={selectedItemId} onHeartClick={props.onHeartClick}/>}
+            <LikeBucket products={props.products}/>
         </div>
     );
 }
