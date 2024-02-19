@@ -12,18 +12,20 @@ function Detail(props) {
         return (
             <div className='detail'>
                 <div className='detblock'>
-                    <div>
-                        <img src={item.imgUrl} style={{width: "400px"}} alt="" />
+                    <div className='imgdetail'>
+                        <img className = 'proimg' src={item.imgUrl} style={{width: "400px"}} alt="" />
+                        
                     </div>
-                    <div>
-                        <h1>{item.name}</h1>
-                        <h2>{item.price}</h2>
-                        <h2 onClick={() => props.onHeartClick(item.id)}>{item.like ? <GoHeartFill style={{color: 'red'}}/> : <GoHeart/>}</h2>
-                        <button className='button'>구매하기</button>
-                    </div>
+                    <div className='detailmain'>
+                            <h1 className='product-name'>{item.name}</h1>
+                            <h2 className='Product-price'>{item.price}</h2>
+                            
+                            <button className='btn'>구매하기</button>
+                            <h1 onClick={() => props.onHeartClick(item.id)}>{item.like ? <GoHeartFill style={{color: 'red'}}/> : <GoHeart/>}</h1>
+                        </div>
                 </div>
                 <div className='det-description'>
-                    <p>{item.description}</p>
+                    <p className='det-dsc'>{item.description}</p>
                 </div>
             </div>
             )

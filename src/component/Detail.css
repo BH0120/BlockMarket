@@ -3,44 +3,63 @@
     height: 100%;
     background-color: #fffdfd;
     align-content: center;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr;
     align-items: center;
-}
-.img {
-    margin: auto;
-    width: 500px;
-    height: 500px;
-}
-
-.button {
-    background-color: rgb(254, 132, 51);
-    width: 100px;
-    height: 30px;
-}
-
-.detail{
     text-align: center;
 }
+.btn {
+    background-color: rgb(254, 132, 51);
+    width: 150px;
+    height: 50px;
+    font-size: 140%;
+}
 
-.h1 {
-    text-align: right; /* 텍스트를 오른쪽으로 정렬 */
+.product-name {
+    text-align: left; /* 텍스트를 오른쪽으로 정렬 */
     margin: 0;
 }
 
-.h2 {
+.product-price {
     text-align: right; /* 텍스트를 오른쪽으로 정렬 */
-    margin: 0;
+    margin-top: 30px;
+
 
 }
 
-
-.p {
+.det-dsc {
     font-size: 16px;
     line-height: 1.5;
 
 }
 
+.proimg{
+    border: 1px solid;
+}
 .description-heading {
     text-align: center;
     margin: 0;
+}
+
+.imgdetail{
+    /* justify-items: stretch; */
+    grid-column: 1;
+    margin-top: 5vh;
+
+}
+ .detailmain{
+    /* justify-items: stretch; */
+    margin-top: 5vh;
+    text-align: left;
+    grid-column: 2;
+
+ }
+
+ .detailmain h2{
+    padding-top: 40px;
+ }
+
+.detblock {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 두 열을 동일한 너비로 설정합니다. */
+
 }
