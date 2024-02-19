@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Product.css";
-import Detail from "./Detail";
 
 function Product(props) {
-
 
   const showProduct = () => {
     return props.products.map((item) => (
