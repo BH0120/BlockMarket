@@ -2,10 +2,20 @@ import React, { useState } from "react";
 import "./Product.css";
 
 function Product(props) {
+  const [zoomedItemId, setZoomedItemId] = useState(1);
+
+  const handleItemClick = (id) => {
+    setZoomedItemId(id);
+    props.onItemClick(id);
+  };
 
   const showProduct = () => {
     return props.products.map((item) => (
-      <div key={item.id} className="navTab" onClick={() => props.onItemClick(item.id)}>
+      <div 
+        key={item.id} 
+        className={`navTab ${zoomedItemId === item.id ? "zoomed" : ""}`} 
+        onClick={() => handleItemClick(item.id)}
+      >
         <div className="navImg">
           <img src={item.imgUrl} alt={item.name} />
         </div>
@@ -17,10 +27,7 @@ function Product(props) {
     ));
   };
 
-
-  
   return <div className="product">{showProduct()}</div>;
 }
 
 export default Product;
-

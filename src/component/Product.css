@@ -4,13 +4,17 @@
     grid-template-columns: 3fr 4fr;
     max-height: 5rem;
     min-height: 20%;
-    
+    transition: transform 0.3s ease; 
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
     margin-top: 0.5rem;
     margin-left: 5px;
-
     cursor: pointer;
+}
+.navTab.zoomed {
+    transform: scale(1.05); 
+    z-index: 10; 
+    background-color: rgb(254, 132, 51);
 }
 
 .product:last-child {
