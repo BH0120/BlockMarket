@@ -15,8 +15,6 @@ function Detail(props) {
                 <h1>{item.name}</h1>
                 <h2>{item.price}</h2>
                 <h2 onClick={() => props.onHeartClick(item.id)}>{item.like ? <GoHeartFill style={{color: 'red'}}/> : <GoHeart/>}</h2>
-                <div>test</div>
-                
             </div>
             )
     }
