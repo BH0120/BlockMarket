@@ -12,9 +12,6 @@
     scrollbar-width: none;
 }
 
-.likeBucket img:nth-child(1) {
-    margin-top: 40px;
-}
 
 #bucketHead {
     position: fixed;
@@ -28,4 +25,20 @@
     justify-content: center;
     align-items: center;
     font-weight: bolder;
+}
+
+#likeParent:nth-child(2) {
+    margin-top: 50px;
+}
+
+/* #likeParent > .likeBucket{
+    margin-top: 50px;
+} */
+
+
+
+
+.likeImg {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
 }

@@ -7,8 +7,8 @@ function LikeBucket(props) {
         return products.map((item) => {
             if( item.like === true ){
                 return(
-                    <div className='likeBucket'>
-                        <img src={item.imgUrl} alt="" />
+                    <div key={item.id} className='likeBucket'>
+                        <img className='likeImg' src={item.imgUrl} alt="" />
                     </div>
                 )
             }
