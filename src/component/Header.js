@@ -6,7 +6,7 @@ function Header(props) {
     const [userType, setUserType] = useState('구매자');
 
     const Userchange = () =>{
-        if(userType == '판매자'){
+        if(userType === '판매자'){
             alert('페이지 점검중');
         }else{
             setUserType('판매자');

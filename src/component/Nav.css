@@ -1,10 +1,12 @@
 .container {
     /* border-right: 1px solid black; */
     height: 100%;
-    width: 30%;
+    width: 40%;
     display: grid;
     grid-template-rows: auto;
     overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
   .container::-webkit-scrollbar {
