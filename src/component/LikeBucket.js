@@ -14,6 +14,7 @@ function LikeBucket(props) {
             }
         })
     }
+    
     return (
         <div id='likeParent'>
             <div id='bucketHead'>찜목록</div>
