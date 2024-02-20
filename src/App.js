@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Body products={products} onHeartClick={handleLikes}/>
+      <Body products={products} onHeartClick={handleLikes} />
     </div>
   );
 }

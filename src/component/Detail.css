@@ -2,11 +2,24 @@
     width: 100%;
     height: 100%;
     background-color: #fffdfd;
-    align-content: center;
-    grid-template-rows: 1fr 2fr;
-    align-items: center;
-    text-align: center;
+    overflow-y: hidden;
+    margin-top: 10%;
 }
+.detParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.detblock {
+   display: grid;
+   width: 80%;
+   grid-template-columns: 1fr 1.5fr; /* 두 열을 동일한 너비로 설정합니다. */
+   gap: 1rem;
+   align-items: center;
+}
+
+
 .btn {
     background-color: rgb(254, 132, 51);
     width: 150px;
@@ -14,52 +27,68 @@
     font-size: 140%;
 }
 
+.det_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.det_title h1 {
+    margin: 0;
+    font-size: xx-large;
+}
+
 .product-name {
     text-align: left; /* 텍스트를 오른쪽으로 정렬 */
-    margin: 0;
+    padding-right: 1rem;
 }
 
 .product-price {
     text-align: right; /* 텍스트를 오른쪽으로 정렬 */
     margin-top: 30px;
-
-
 }
 
-.det-dsc {
-    font-size: 16px;
-    line-height: 1.5;
 
+.imgdetail{
+    display: flex;
+    align-items: right;
 }
 
 .proimg{
     border: 1px solid;
+    max-width: 400px;
+    height: 350px;
+    object-fit: contain;
 }
 .description-heading {
     text-align: center;
     margin: 0;
 }
 
-.imgdetail{
-    /* justify-items: stretch; */
-    grid-column: 1;
-    margin-top: 5vh;
-
-}
  .detailmain{
     /* justify-items: stretch; */
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     text-align: left;
-    grid-column: 2;
-
  }
 
- .detailmain h2{
+ /* .detailmain h2{
     padding-top: 40px;
+ } */
+
+ .detCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
+ 
 
-.detblock {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 두 열을 동일한 너비로 설정합니다. */
-
+ .det-description {
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 90%;
+    border-top: 1px solid rgb(254, 132, 51);
+ }
+ .det-dsc {
+    font-size: 16px;
+    line-height: 1.5;
 }
+

@@ -10,6 +10,8 @@
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+
+    border: 1px solid black;
 }
 
 
@@ -27,11 +29,12 @@
     font-weight: bolder;
 }
 
-#likeParent:nth-child(2) {
+.first{
     margin-top: 50px;
 }
 
-/* #likeParent > .likeBucket{
+/* 
+#likeParent > .likeBucket{
     margin-top: 50px;
 } */
 
