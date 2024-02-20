@@ -15,7 +15,7 @@ function Body(props) {
         <div className='body'>
             <Nav products={props.products} onItemClick={handleItemClick}/>
             {selectedItemId && <Detail products={props.products} onItemClick={selectedItemId} onHeartClick={props.onHeartClick}/>}
-            <LikeBucket products={props.products}/>
+            <LikeBucket products={props.products} onItemClick={handleItemClick}/>
         </div>
     );
 }
