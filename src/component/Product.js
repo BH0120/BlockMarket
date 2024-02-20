@@ -7,7 +7,7 @@ function Product(props) {
   const handleItemClick = (id) => {
     setZoomedItemId(id);
     props.onItemClick(id);
-    //test
+
   };
 
   const showProduct = () => {
