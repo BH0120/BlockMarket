@@ -35,12 +35,7 @@ function Detail(props) {
         <div className="detParent">
           <div className="detblock">
             <div className="imgdetail">
-              <img
-                className="proimg"
-                src={item.imgUrl}
-                style={{ width: "400px" }}
-                alt=""
-              />
+              <img className="proimg" src={item.imgUrl} style={{ width: "400px" }} alt="" />
             </div>
             <div className="detailmain">
               <div className="det_title">
