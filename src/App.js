@@ -19,7 +19,12 @@ function App() {
   ]);
   
   const onRemove = (id) => {
-    const newProd = products.filter(product => product.id !== id)
+    let newProd = products.filter(product => product.id !== id)
+    let idx = 1;
+    for (let i = 0; i < newProd.length; i++) {
+      newProd[i].id = idx;
+      idx++;
+    }
     setProducts(newProd);
   }
 
