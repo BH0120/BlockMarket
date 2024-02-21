@@ -4,7 +4,7 @@ import "./LikeBucket.css";
 function LikeBucket(props) {
     const products = props.products;
     const showLike = () => {
-        return products.map((item, index) => {
+        return products.map((item) => {
             if( item.like === true ){
                 return(
                     <div key={item.id} className={"likeBucket"} onClick={()=>props.onItemClick(item.id)}>
