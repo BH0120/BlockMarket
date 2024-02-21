@@ -23,7 +23,7 @@ function Detail(props) {
         // 구매하기를 눌렀을 때 판매자 연락처 정보 표시
         Swal.fire(
           '연락처 정보',
-          `판매자 전화번호: ${item.sellerPhone}\n카톡 ID: ${item.sellerKakao}`,
+          `카톡 ID: ${item.sellerContact}`, // 수정된 부분
           'success'
         )
       }
