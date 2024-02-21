@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './component/Header';
 import Body from './component/Body';
-
 import { useState } from 'react';
 
 function App() {
@@ -18,6 +17,11 @@ function App() {
     {id: 9, name:"삼성 정품 충전기", price: "10,000원", like: false, imgUrl: "https://bluejteam.cafe24.com/web/product/big/202302/228dbdc7c396607d4a2fcc4f4c16bebb.png" , description: "선이 넘~~~~ 많아서 팝니다!~~~ \n",sellerContact: "charger_seller"},
     {id: 10, name:"IAB 검정 후드티", price: "400,000원", like: false, imgUrl: "https://media.bunjang.co.kr/product/230932269_1_1690561717_w360.jpg" , description: "거의 새상품입니다 (3회착용) , 보폴 없음 \n먼지는 제거 후 보내드릴게요. \n현재 크림가 43만원입니다~ \n",sellerContact: "hoodi_seller"},
   ]);
+  
+  const onRemove = (id) => {
+    const newProd = products.filter(product => product.id !== id)
+    setProducts(newProd);
+  }
 
   const handleLikes = (productId) => {
     setProducts((prevProducts) => {
@@ -30,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Body products={products} onHeartClick={handleLikes} />
+      <Body products={products} onHeartClick={handleLikes} onRemove={onRemove} />
     </div>
   );
 }

@@ -25,7 +25,7 @@ function Body(props) {
           products={props.products}
           onItemClick={selectedItemId}
           onHeartClick={props.onHeartClick}
-          // onBuy={props.onBuy}
+          onRemove={props.onRemove}
         />
       )}
       <LikeBucket products={props.products} onItemClick={handleItemClick} />

@@ -8,6 +8,8 @@ import Swal from 'sweetalert2'; // SweetAlert2 라이브러리 import
 function Detail(props) {
   const item = props.products[props.onItemClick - 1];
 
+  const onRemove = props.onRemove;
+
   const handlePurchaseClick = () => {
     Swal.fire({
       title: '구매를 진행하시겠습니까?',
@@ -24,10 +26,17 @@ function Detail(props) {
         Swal.fire(
           '연락처 정보',
           `카톡 ID: ${item.sellerContact}`, // 수정된 부분
-          'success'
+          'success',
+          // ()=>{
+          //   console.log(props.products);
+          //   onRemove(item.id);
+          // }
+          onRemove(item.id)
         )
       }
     });
+
+    
   };
   const showProduct = () => {
     return (
