@@ -46,11 +46,7 @@ function Detail(props) {
               <div className="det_title">
                 <h1 className="product-name">{item.name}</h1>
                 <h1 onClick={() => props.onHeartClick(item.id)}>
-                {item.like ? (
-                  <GoHeartFill style={{ color: "red" }} />
-                ) : (
-                  <GoHeart />
-                )}
+                {item.like ? (<GoHeartFill style={{ color: "red" }} /> ) : (<GoHeart />)}
                 </h1>
               </div>
               <h2 className="Product-price">{item.price}</h2>
